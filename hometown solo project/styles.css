@@ -9,7 +9,7 @@ DARK BLUE: #1D3557
 */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO SECTION */
 .header {
   background: url("./images/home.webp") no-repeat center center/cover;
   color: white;
@@ -27,27 +26,27 @@ body {
 .header h1 {
   font-size: 3rem;
   margin: 0;
-  box-shadow: 0 0 30px black;
+  /* box-shadow: 0 0 6px black; */
 }
 .header h2 {
   font-size: 1.5rem;
   margin-top: 10px;
+  /* box-shadow: 0 0 6px black; */
 }
 
-/* ACTIVITIES SECTION */
 .activities {
-  padding: 40px 20px;
+  padding: 40px 70px;
   background-color: #fff;
   text-align: center;
 }
 .activities h3 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .activities .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 .activities .card {
   background-color: #fafafa;
@@ -55,6 +54,11 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+  transition: transform 0.3s ease;
+}
+.activities .card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .activities img {
   width: 100%;
@@ -70,7 +74,6 @@ body {
   margin: 10px;
 }
 
-/* GUIDE SECTION */
 .guide {
   padding: 40px 20px;
   background-color: #f0f0f0;
@@ -78,18 +81,23 @@ body {
 }
 .guide h3 {
   font-size: 2rem;
-  margin-bottom: 20px;
 }
 .guide p {
   font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 .guide img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin: 10px auto;
-  display: block;
+}
+.about {
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  align-items: center;
 }
