@@ -17,7 +17,7 @@ body {
   background-color: #1b244a;
   width: 50%;
   margin: auto auto;
-  height: 50%;
+  height: 60%;
 }
 h3 {
   font-size: 3rem;
@@ -54,7 +54,7 @@ h3 {
   justify-content: space-evenly;
 }
 .reset {
-  padding: 20px 0 0 20px;
+  margin: 40px 0 0 20px;
 }
 .reset button {
   background-color: white;
