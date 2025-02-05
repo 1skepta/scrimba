@@ -1,16 +1,18 @@
 @font-face {
   font-family: "Cursed Timer";
-  src: url("assets/CursedTimerUlil-Aznm.ttf") format("truetype");
+  src: url("assets/fonts/CursedTimerUlil-Aznm.ttf") format("truetype");
 }
 
 body {
   margin: 0;
   height: 100vh;
+  background-image: url(./assets/bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
-  display: flex;
-  justify-content: space-around;
   color: white;
   background-color: #1b244a;
   width: 50%;
@@ -21,6 +23,7 @@ h3 {
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   margin: 30px 0 0 0;
+  user-select: none;
 }
 .score {
   background-color: black;
@@ -33,14 +36,30 @@ h3 {
   font-size: 5rem;
   color: #f94f6d;
   font-family: "Cursed Timer", sans-serif;
+  padding-top: 15px;
+  user-select: none;
 }
-.operations span {
+.operations button {
   color: #9aabd8;
   border: 1px solid #9aabd8;
-  padding: 4px 6px;
+  padding: 6px 6px 4px;
   border-radius: 2px;
+  font-family: "Cursed Timer", sans-serif;
+  cursor: pointer;
+  user-select: none;
+  background-color: #1b244a;
 }
 .operations {
   display: flex;
   justify-content: space-evenly;
+}
+.reset {
+  padding: 20px 0 0 20px;
+}
+.reset button {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 3px 5px;
 }
